@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form </title>
+</head>
+<body>
+
+  <div class="myForm">  
+  <form class="testValidation">
+    <div class="formErrors"></div>
+    <div class="formRow">
+      <div class="formEl">
+        <input type="text" name="yourName" required aria-required>
+        <label for="yourName">Name: </label>
+      </div>
+      <div class="formEl">
+        <input name="email" type="email" required aria-required>
+        <label for="email">Email: </label>
+      </div>      
+    </div>
+    <div class="formRow">
+      <div class="formEl">
+        <input type="tel" name="phone">
+        <label for="phone">Phone: </label> 
+      </div>
+    </div>
+    <div class="formEl"><input type="text" name="preferredLanguage" list="languages" required aria-required>
+      <datalist id="languages">
+          <option value="PHP">PHP</option>
+          <option value="GO">GO</option>
+          <option value="JavaScript">JavaScript</option>
+      </datalist>
+      <label for="preferredLanguage">Preferred Language: </label>
+    </div>
+    <div class="formEl formBtn"><input type="submit" value="Submit"></div> 
+  </form>
+</div>
+
+<script>
+  
+  
+
+</script>
+  
+</body>
+</html>
